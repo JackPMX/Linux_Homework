@@ -1,0 +1,23 @@
+#!/bin/bash
+mkdir test
+mkdir test2
+cd test2
+echo "Hello Nanjing!">1.txt
+
+echo "Hello Hello Hello!">>2.txt
+
+echo "Nanjing Jiangsu China.">>4.txt
+
+echo "Nanjing Try Jiangsu China.">>3.txt
+
+cd ..
+ls
+
+for file in test2/*
+do
+  echo "$file"
+  cp $file ./test
+done
+cd test
+
+ls -l|sort -n +4 -5

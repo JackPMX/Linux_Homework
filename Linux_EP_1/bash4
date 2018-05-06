@@ -1,0 +1,2 @@
+#!/bin/bash
+awk 'BEGIN {max = 0} {if ($1 > max) max=$1} END {print "Max=",max}' data_try.txt

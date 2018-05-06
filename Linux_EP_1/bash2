@@ -1,0 +1,10 @@
+#!/bin/bash
+count=1
+echo "$count"
+result=1
+while [ $count -le 20 ]
+  do
+    result=$(( $result * $count ))
+    count=$(( $count + 1 ))
+  done
+echo "$result"
